@@ -1,0 +1,67 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* ... Estilos do cabeçalho ... */
+
+main {
+    background-color: #333;
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+}
+.games-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    overflow-y: auto;
+    max-height: 100%;
+}
+
+.game {
+    color: #ccc;
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.game img {
+    max-width: 100%;
+    height: auto;
+}
+
+.game h3 {
+    margin: 1px 0;
+}
+
+.play-button {
+    display: block;
+    margin: 10px auto;
+    background-color: #222;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
