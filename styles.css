@@ -59,6 +59,11 @@ main {
     cursor: pointer;
 }
 
+.play-button:hover {
+    transition: 0.25s;
+    background-color: #111;
+}
+
 footer {
     background-color: #222;
     color: #fff;
