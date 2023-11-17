@@ -1,0 +1,13 @@
+var tamanhoCasa = 20;
+var linhas = 20;
+var colunas = 20;
+var mesa;
+var contexto; 
+var snakeX = tamanhoCasa * 10;
+var snakeY = tamanhoCasa * 10;
+var velociddX = 1;
+var velociddY = 1;
+var corpo = [];
+var comidaX;
+var comidaY;
+var gameOver = false;
