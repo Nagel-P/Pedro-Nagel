@@ -1,12 +1,12 @@
-var tamanhoCasa = 20;
+var tamanhoCasa = 21;
 var linhas = 20;
 var colunas = 20;
 var mesa;
 var contexto; 
-var snakeX = tamanhoCasa * 10;
-var snakeY = tamanhoCasa * 10;
-var velociddX = 1;
-var velociddY = 1;
+var snakeX = tamanhoCasa * 5;
+var snakeY = tamanhoCasa * 5;
+var velociddX = 0;
+var velociddY = 0;
 var corpo = [];
 var comidaX;
 var comidaY;
