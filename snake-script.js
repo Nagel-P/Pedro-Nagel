@@ -57,13 +57,24 @@ function update() {
         contexto.fillRect(corpo[i][0], corpo[i][1], tamanhoCasa, tamanhoCasa);
     }
 
+    function perdeuMane() {
+        contexto.font = "40px Courier New";
+        contexto.fillStyle = "white";
+        const gameOverTextWidth = contexto.measureText("Você perdeu mané!").width;
+        const xPosition = (mesa.width - gameOverTextWidth) / 2;
+        const yPosition = mesa.height / 2;
+        contexto.fillText("Você perdeu mané!", xPosition, yPosition);
+    }
+
     if (snakeX < 0 || snakeX > colunas*tamanhoCasa || snakeY < 0 || snakeY > linhas*tamanhoCasa) {
         gameOver = true;
+        perdeuMane();
     }
 
     for (let i = 0; i < corpo.length; i++) {
         if (snakeX == corpo[i][0] && snakeY == corpo[i][1]) {
             gameOver = true;
+            perdeuMane();
         }
     }
 
