@@ -11,9 +11,9 @@ header {
     background-color: #222;
     color: #fff;
     text-align: center;
-    padding: 10px 0;
+    padding: 20px 0;
 }
-}
+
 .header-content {
     display: flex;
     justify-content: space-between;
@@ -23,6 +23,7 @@ header {
 h1 {
     margin: 0;
 }
+
 main {
     background-color: #333;
     color: #ccc;
@@ -33,6 +34,7 @@ main {
     flex-direction: column;
     width: 100%;
 }
+
 section {
     text-align: center;
     border-radius: 10px;
@@ -41,9 +43,11 @@ section {
     background-color: #333;
     margin-top: 35px;
 }
+
 .game--title {
     padding-top: 20px;
 }
+
 .game--container {
     display: grid;
     grid-template-columns: repeat(3, auto);
@@ -51,8 +55,9 @@ section {
     margin: 120px;
     margin-bottom: 10px;
     margin-top: 30px;
-  
+
 }
+
 .casa {
     font-family: "Poppins", sans-serif;
     width: 85px;
@@ -62,6 +67,7 @@ section {
     line-height: 85px;
     font-size: 60px;
 }
+
 button {
     margin-bottom: 20px;
     height: 30px;
@@ -71,10 +77,12 @@ button {
     background-color: #222;
     cursor: pointer;
 }
+
 button:hover {
     transition: 0.25s;
     background-color: #111;
 }
+
 .menu-button {
     display: flex;
     padding: 10px;
@@ -89,6 +97,7 @@ button:hover {
 .menu-button:hover img {
     filter: brightness(0.7);
 }
+
 footer {
     background-color: #222;
     color: #fff;
