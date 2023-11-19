@@ -13,6 +13,7 @@ header {
     text-align: center;
     padding: 20px 0;
 }
+
 .header-content {
     display: flex;
     justify-content: space-between;
@@ -22,6 +23,7 @@ header {
 h1 {
     margin: 0;
 }
+
 main {
     background-color: #333;
     color: #ccc;
@@ -32,6 +34,7 @@ main {
     flex-direction: column;
     width: 100%;
 }
+
 .menu-button {
     display: flex;
     padding: 10px;
@@ -46,6 +49,7 @@ main {
 .menu-button:hover img {
     filter: brightness(0.7);
 }
+
 footer {
     background-color: #222;
     color: #fff;
