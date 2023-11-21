@@ -12,6 +12,7 @@ var comidaX;
 var comidaY;
 var gameOver = false;
 var pontuacao = 0;
+var intervaloAtualizacao = 1000 / 10;
 
 window.onload = function () {
     mesa = document.getElementById("mesa");
@@ -21,8 +22,30 @@ window.onload = function () {
 
     spawnComida();
     document.addEventListener("keyup", mudaDirecao);
-    setInterval(update, 1000 / 10);
+    setInterval(update, intervaloAtualizacao);
 }
+
+function modoInferno() {
+    var main = document.querySelector("header");
+    main.classList.toggle("red");
+
+    var main = document.querySelector("main");
+    main.classList.toggle("red");
+    
+    var footer = document.querySelector("footer");
+    footer.classList.toggle("red");
+
+    spawnComida();
+
+    document.removeEventListener("keyup", mudaDirecao);
+    document.addEventListener("keyup", mudaDirecao);
+
+    clearInterval();
+    intervaloAtualizacao = 1000 / 20;
+    setInterval(update, intervaloAtualizacao);
+}
+
+document.getElementById("modoInferno").addEventListener("click", modoInferno);
 
 function update() {
     if (gameOver) {
