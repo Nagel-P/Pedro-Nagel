@@ -56,3 +56,18 @@ footer {
     text-align: center;
     padding: 10px 0;
 }
+
+header.red {
+    background-color: #000;
+    color: red;
+}
+
+main.red {
+    background-color: #111;
+    color: red;
+}
+
+footer.red {
+    background-color: #000;
+    color: red;
+}
